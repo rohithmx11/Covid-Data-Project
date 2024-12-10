@@ -1,6 +1,6 @@
 # Global Lessons from COVID-19: How HDI and Demographics Shaped the Pandemic's Impact
 ## Development, Demographics, and Pandemic A Data-Driven Perspective.
-![49697047852_312e17f4ba_o](https://github.com/user-attachments/assets/bc523c45-12cd-4906-9155-d52fcbc7b82b)
+![Coronavirus_illustration_(ann20002a)](https://github.com/user-attachments/assets/fbdd1f95-d843-43c9-a81a-69718a604ce9)
 ### COVID — 19 affected every corner of the world, but the intensity and outcomes varied significantly across regions and countries. Using data-driven analysis, this article explores how factors like Human Development Index(HDI), demographics, and testing rates influenced the infection and fatality rates during the pandemic.
 <br>
 
@@ -121,3 +121,7 @@ Dashboard Preview :
    - High HDI countries conducted more tests, which likely contributed to higher reported cases and provided better visibility into the pandemic’s spread.
 
 The initial surge in numbers highlighted how contagious the COVID-19 disease was. Regardless of a country’s level of development, a pandemic of this nature can easily cause both short-term and long-term impacts on humanity. To prevent encountering such severe threats in the future, proper precautions and planning are essential.
+
+
+## Data Source
+The dataset used in this analysis was sourced from [Our World in Data](https://ourworldindata.org/), a globally recognized platform for open-access, high-quality data on COVID-19 and other critical global issues.
