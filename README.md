@@ -1,4 +1,4 @@
-# How HDI and Demographics Shaped the Global Impact of COVID-19
+# Global Lessons from COVID-19: How HDI and Demographics Shaped the Pandemic's Impact
 ## Development, Demographics, and Pandemic A Data-Driven Perspective.
 ![49697047852_312e17f4ba_o](https://github.com/user-attachments/assets/bc523c45-12cd-4906-9155-d52fcbc7b82b)
 ### COVID — 19 affected every corner of the world, but the intensity and outcomes varied significantly across regions and countries. Using data-driven analysis, this article explores how factors like Human Development Index(HDI), demographics, and testing rates influenced the infection and fatality rates during the pandemic.
@@ -82,7 +82,25 @@ This scatter plot examines the relationship between HDI and case fatality rate (
 A bubble scatter plot explores the relationship between life expectancy and fatalities per population, with bubble size representing the percentage of the population aged 65+.
 * **Observation:**
   * Developed countries, with high life expectancy and older populations, faced higher fatalities per population despite lower fatality rates per reported case.
- 
+
+<br>
+
+## Dive Deeper with the Interactive Dashboard
+Explore the full interactive COVID-19 analysis using our dashboard. This tool allows you to filter data by continent, country, and timeline to better understand the trends, test rates, and fatality statistics across various HDI categories.
+### Key Features of the Dashboard
+ * Interactive Filters: Filter by Continent, Country, and Timeline to view dynamic trends.
+ * Top 10 Visualizations: Includes insights into the top 10 cases, deaths, CFR, and fatalities per population.
+ * Geographic Analysis: Map visualizations showing patterns of infection and testing rates.
+ * Matrix Analysis: Compare fatality rates, HDI levels, and demographic data, like the percentage of populations aged 65+.
+
+### [Access the Interactive Dashboard Here](https://app.powerbi.com/reportEmbed?reportId=33783899-5b62-427c-a98c-18199a87944b&autoAuth=true&ctid=0f6f64b4-8041-4e40-ba12-ddb4d7d25c9e)
+
+Dashboard Preview :
+
+![Screenshot 2024-12-10 172728](https://github.com/user-attachments/assets/e1dc3c75-9808-4b1d-ac31-e9f5b9822035)
+![Screenshot 2024-12-10 172752](https://github.com/user-attachments/assets/59b9898e-9e46-4d16-80be-c9dd65f78c7d)
+
+
 ## Conclusion
 
 1. **Infection and Fatality Rates:**
