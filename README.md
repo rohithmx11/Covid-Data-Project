@@ -126,4 +126,4 @@ The initial surge in numbers highlighted how contagious the COVID-19 disease was
 
 ## Data Source
 The dataset used in this analysis was sourced from [Our World in Data](https://ourworldindata.org/), a globally recognized platform for open-access, high-quality data on COVID-19 and other critical global issues.
-You can download the processed dataset used for this study directly from this [GitHub repository](https://github.com/rohithmx11/COVID-19-Analysis-Dataset).
+You can download the processed dataset used for this study directly from this [GitHub repository](https://github.com/rohithmx11/Covid/blob/main/Dataset/covid%20datasets.zip).
