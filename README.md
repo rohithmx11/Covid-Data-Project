@@ -93,7 +93,8 @@ Explore the full interactive COVID-19 analysis using our dashboard. This tool al
  * Geographic Analysis: Map visualizations showing patterns of infection and testing rates.
  * Matrix Analysis: Compare fatality rates, HDI levels, and demographic data, like the percentage of populations aged 65+.
 
-### [Access the Interactive Dashboard Here](https://app.powerbi.com/reportEmbed?reportId=33783899-5b62-427c-a98c-18199a87944b&autoAuth=true&ctid=0f6f64b4-8041-4e40-ba12-ddb4d7d25c9e)
+### [Access the Interactive Dashboard Here](https://app.powerbi.com/view?r=eyJrIjoiNWU3YTkyYjEtOGUyOC00N2E4LWFjMzgtNzEwY2E3NmUxZGUxIiwidCI6IjBmNmY2NGI0LTgwNDEtNGU0MC1iYTEyLWRkYjRkN2QyNWM5ZSJ9)
+
 
 Dashboard Preview :
 
