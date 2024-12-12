@@ -1,6 +1,6 @@
 SELECT * 
 FROM coviddeaths
-order by 3,4
+order by 3,4;
 
 
 SELECT *
