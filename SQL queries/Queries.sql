@@ -137,6 +137,42 @@ WHERE [Classification of HDI] is not null
 GROUP BY [Classification of HDI]
 
 
+-- Average Percentage of Population Aged 65+ and Fatality Rate per 100k by HDI Classification
+
+
+SELECT 
+    [Classification of HDI],
+    AVG(aged_65_older) AS avg_percent_aged_65_plus,
+    AVG(fatality_per_100k) AS avg_fatality_per_100k
+FROM (
+    SELECT DISTINCT 
+        t1.location,
+        human_development_index,
+        aged_65_older,
+        fatality_per_100k,
+        CASE 
+            WHEN human_development_index > 0.800 THEN 'Very high human development'
+            WHEN human_development_index BETWEEN 0.700 AND 0.799 THEN 'High human development'
+            WHEN human_development_index BETWEEN 0.550 AND 0.699 THEN 'Medium human development'
+            WHEN human_development_index < 0.550 THEN 'Low human development'
+        END AS [Classification of HDI]
+    FROM 
+        covidvaccinations AS t1
+    JOIN (
+        SELECT 
+            location,
+            MAX(total_deaths) / MAX(population) * 100000 AS fatality_per_100k
+        FROM 
+            coviddeaths
+        GROUP BY [location]
+    ) t2
+    ON t1.location = t2.location
+) t3
+WHERE [Classification of HDI] IS NOT NULL
+GROUP BY [Classification of HDI];
+
+
+
 
 -- Global Numbers
 
