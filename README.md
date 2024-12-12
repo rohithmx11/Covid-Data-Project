@@ -24,7 +24,7 @@ This line chart compares cumulative cases across continents over time, highlight
 <br>
 
 ### **2. Comparing Infection and Fatality Rates by HDI Categories.**
-![Screenshot 2024-12-01 001432](https://github.com/user-attachments/assets/a0b90430-bcf5-4f37-ac78-430ef9a68246)
+![Screenshot 2024-12-12 164952](https://github.com/user-attachments/assets/f51cd23a-b28d-43d7-8b1b-f59a51617b5a)
 Dual-axis line chart compares cumulative cases per 100,000 and fatalities per 100,000 across HDI categories over time.
 <br>
 * **Observations:**
