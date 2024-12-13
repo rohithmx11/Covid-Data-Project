@@ -11,14 +11,26 @@ order by 3,4
 --Selecting data which is going to use
 
 
-SELECT [location],[date],total_cases,new_cases,total_deaths,[population]
+SELECT 
+	[location],
+	[date],
+	total_cases,
+	new_cases,
+	total_deaths,
+	[population]
 FROM coviddeaths
 ORDER BY 1,2
 
 
 -- Looking at Total Cases vs Total Deaths
 
-SELECT [location],[date],total_cases,total_deaths,[population],(total_deaths/total_cases)*100 as Death_Percentage
+SELECT 
+	[location],
+	[date],
+	total_cases,
+	total_deaths,
+	[population],
+	(total_deaths/total_cases)*100 as Death_Percentage
 FROM coviddeaths
 where total_cases > 0 and location = 'India'
 ORDER BY 1,2
@@ -27,7 +39,12 @@ ORDER BY 1,2
 -- Looking at Total Cases vs Population
 -- Shows what percentage of population got covid
 
-SELECT [location],[date],[population],total_cases,cast((total_cases/[population])*100 as decimal(18,10)) as PercentagePopulationinfected
+SELECT 
+	[location],
+	[date],
+	[population],
+	total_cases,
+	cast((total_cases/[population])*100 as decimal(18,10)) as PercentagePopulationinfected
 FROM coviddeaths
 --where location = 'India'
 ORDER BY 1,2
@@ -35,8 +52,11 @@ ORDER BY 1,2
 
 -- Looking at Countries with Highest infection rate compared to population
 
-SELECT [location],[population],MAX(total_cases) as HighestInfectionCount,
-MAX(CAST((total_cases/[population])*100 AS decimal(18,10))) as PercentagePopulationinfected
+SELECT 
+	[location],
+	[population],
+	MAX(total_cases) as HighestInfectionCount,
+	MAX(CAST((total_cases/[population])*100 AS decimal(18,10))) as PercentagePopulationinfected
 FROM coviddeaths
 --where location = 'India'
 GROUP BY [population],[location]
