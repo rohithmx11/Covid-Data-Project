@@ -124,6 +124,7 @@ Dashboard Preview :
 The initial surge in numbers highlighted how contagious the COVID-19 disease was. Regardless of a country’s level of development, a pandemic of this nature can easily cause both short-term and long-term impacts on humanity. To prevent encountering such severe threats in the future, proper precautions and planning are essential.
 
 
-## Data Source
+## Note to Readers
 The dataset used in this analysis was sourced from [Our World in Data](https://ourworldindata.org/), a globally recognized platform for open-access, high-quality data on COVID-19 and other critical global issues.
 You can download the processed dataset used for this study directly from this [GitHub repository](https://github.com/rohithmx11/Covid/blob/main/Dataset/covid%20datasets.zip).
+This analysis was conducted using SQL for querying and managing the dataset and Power BI for creating interactive visualizations. For a detailed breakdown of the methodology and tools used, please visit the dedicated [GitHub repository](https://github.com/rohithmx11/Covid/blob/main/SQL%20queries/Queries.sql).
