@@ -1,5 +1,5 @@
 # Global Lessons from COVID-19: How HDI and Demographics Shaped the Pandemic's Impact
-## Development, Demographics, and Pandemic A Data-Driven Perspective.
+## SQL Methodology.
 ![Coronavirus_illustration_(ann20002a)](https://github.com/user-attachments/assets/fbdd1f95-d843-43c9-a81a-69718a604ce9)
 ### COVID — 19 affected every corner of the world, but the intensity and outcomes varied significantly across regions and countries. Using data-driven analysis, this article explores how factors like Human Development Index(HDI), demographics, and testing rates influenced the infection and fatality rates during the pandemic.
 <br>
