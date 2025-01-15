@@ -21,7 +21,7 @@ The data was downloaded from [Our World in Data](https://ourworldindata.org/), a
 - The imported tables were named:
    * coviddeaths
    * covidvaccinations
-### **2. Data Understanding**
+### **4. Data Understanding**
 * Datasets Used:
    * coviddeaths: Contains data on COVID-19 cases, deaths, and population by location and date.
    * covidvaccinations: Contains data on vaccination progress, testing rates, and HDI by location and date.
