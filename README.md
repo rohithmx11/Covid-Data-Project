@@ -7,9 +7,9 @@ The data was downloaded from [Our World in Data](https://ourworldindata.org/), a
 <br>
 
 ## Preprocessing in Excel
-### 1. The dataset was cleaned and split into two files for analysis :
-      * coviddeaths.csv: Focused on data related to cases, deaths, and population..
-      * covidvaccinations.csv: Included data on vaccination progress, testing rates, and human development index (HDI).
+### * The dataset was cleaned and split into two files for analysis :
+  1. coviddeaths.csv: Focused on data related to cases, deaths, and population..
+  2. covidvaccinations.csv: Included data on vaccination progress, testing rates, and human development index (HDI).
 ### 2.  Case Fatality Rate(CFR) :
   * The CFR(fatalities per reported cases) showed little variation across countries regardless of their HDI.
 ### 3. Demographics and Fatality :
