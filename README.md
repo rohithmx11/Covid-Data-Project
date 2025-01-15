@@ -9,9 +9,10 @@ The data was downloaded from [Our World in Data](https://ourworldindata.org/), a
 ### **2. Preprocessing in Excel**
 
 1. The dataset was cleaned and split into two files for analysis:
+   
    - **coviddeaths.csv**: Focused on data related to cases, deaths, and population.
    - **covidvaccinations.csv**: Included data on vaccination progress, testing rates, and human development index (HDI).
-2. The split ensured better data organization and easier analysis in SQL.
+3. The split ensured better data organization and easier analysis in SQL.
   
 
 
