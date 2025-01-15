@@ -7,16 +7,11 @@ The data was downloaded from [Our World in Data](https://ourworldindata.org/), a
 <br>
 
 ## Preprocessing in Excel
-### 1. The dataset was cleaned and split into two files for analysis :
-  * coviddeaths.csv: Focused on data related to cases, deaths, and population..
+### 1. The dataset was cleaned and split into two files for analysis.
+  * coviddeaths.csv: Focused on data related to cases, deaths, and population.
   * covidvaccinations.csv: Included data on vaccination progress, testing rates, and human development index (HDI).
-### 2.  Case Fatality Rate(CFR) :
-  * The CFR(fatalities per reported cases) showed little variation across countries regardless of their HDI.
-### 3. Demographics and Fatality :
-  * Countries with higher life expectancy and a larger percentage of populations aged 65+ experienced higher fatalities per population.
-### 4. Testing Rates :
-  * High HDI countries also had significantly higher testing rates, which likely contributed to higher reported case numbers.
-<br>
+### 2. The split ensured better data organization and easier analysis in SQL   
+
 
 ## Visualizing The Impact
 ### **1.Global Infection Trends Across Continents.**
