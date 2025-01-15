@@ -22,10 +22,10 @@ The data was downloaded from [Our World in Data](https://ourworldindata.org/), a
    * coviddeaths
    * covidvaccinations
 ### **2. Data Understanding**
-Datasets Used:
+* Datasets Used:
    * coviddeaths: Contains data on COVID-19 cases, deaths, and population by location and date.
    * covidvaccinations: Contains data on vaccination progress, testing rates, and HDI by location and date.
-Key Columns:
+* Key Columns:
    * coviddeaths: location, date, total_cases, total_deaths, population
    * covidvaccinations: location, date, total_tests, human_development_index, aged_65_older
 
