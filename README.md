@@ -14,8 +14,13 @@ The data was downloaded from [Our World in Data](https://ourworldindata.org/), a
    - **covidvaccinations.csv**: Included data on vaccination progress, testing rates, and human development index (HDI).
 3. The split ensured better data organization and easier analysis in SQL.
   
-
-
+### **3. Data Import into SQL Server**
+- The cleaned CSV files were imported into SQL Server using the Import and Export Data Wizard
+   - This tool allows seamless import of CSV files directly into SQL tables.
+   - The process ensures proper data type mapping and eliminates manual table creation errors.
+- The imported tables were named:
+   1. coviddeaths
+   2. covidvaccinations
 ## Visualizing The Impact
 ### **1.Global Infection Trends Across Continents.**
 ![Screenshot 2024-12-01 001407](https://github.com/user-attachments/assets/589a3b75-4a1a-4382-a27c-ee0f154ae073)
