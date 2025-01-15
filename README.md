@@ -19,8 +19,9 @@ The data was downloaded from [Our World in Data](https://ourworldindata.org/), a
    - This tool allows seamless import of CSV files directly into SQL tables.
    - The process ensures proper data type mapping and eliminates manual table creation errors.
 - The imported tables were named:
-   1. coviddeaths
-   2. covidvaccinations
+   * coviddeaths
+   * covidvaccinations
+   
 ## Visualizing The Impact
 ### **1.Global Infection Trends Across Continents.**
 ![Screenshot 2024-12-01 001407](https://github.com/user-attachments/assets/589a3b75-4a1a-4382-a27c-ee0f154ae073)
