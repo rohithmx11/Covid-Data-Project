@@ -287,4 +287,7 @@ By integrating datasets from coviddeaths and covidvaccinations, we analyzed key 
 
 In the next sections, we will delve into the results of these queries, interpret the findings, and discuss their implications in the broader context of public health and policy-making.
 
+For a detailed discussion of the findings, visualizations, and interpretations, please visit the blog post:
+[Global Lessons from COVID-19: Insights from Data Analysis](https://rohithmx11.github.io/RohithAnalysis.github.io/covid.html)
+
 
