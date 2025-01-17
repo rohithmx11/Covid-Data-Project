@@ -29,6 +29,8 @@ The data was downloaded from [Our World in Data](https://ourworldindata.org/), a
    * coviddeaths: location, date, total_cases, total_deaths, population
    * covidvaccinations: location, date, total_tests, human_development_index, aged_65_older
 ### **3. Data Cleaning and Preprocessing**
+   * Filtering Relevant Data:
+     Extracted essential columns such as total_cases, total_deaths, population, total_tests, and human_development_index.
 
 ## Visualizing The Impact
 ### **1.Global Infection Trends Across Continents.**
