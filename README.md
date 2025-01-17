@@ -60,7 +60,7 @@ WHERE TABLE_NAME = 'covidvaccinations'
 #### Filtering Relevant Data
 Extracted essential columns such as `total_cases`, `total_deaths`, `population`, `total_tests`, and `human_development_index`.
 
-#### 5.1. SQL Query: Extracting and Organizing Relevant Columns
+### 5.1. SQL Query: Extracting and Organizing Relevant Columns
 ```sql
 SELECT 
 	[location],
@@ -76,7 +76,7 @@ Screenshot of the SQL Output
 
 ![Image](https://github.com/user-attachments/assets/99fad622-5250-4556-8f25-ed390c6f5532)
 
-#### 5.2. SQL Query: Cumulative COVID-19 Cases by Continent Over Time
+### 5.2. SQL Query: Cumulative COVID-19 Cases by Continent Over Time
 ```sql
 SELECT
     continent,
@@ -90,7 +90,7 @@ Screenshot of the SQL Output
 
 ![Image](https://github.com/user-attachments/assets/f554129c-80ae-4119-a488-3e8952b147af) 
 
-#### 5.3. SQL Query: COVID-19 Case Fatality and Population Impact by HDI Classification.
+### 5.3. SQL Query: COVID-19 Case Fatality and Population Impact by HDI Classification.
 This query calculates various metrics related to COVID-19 impact, such as the case fatality rate, fatality rate per 100k population, and cumulative cases per 100k, based on the Human Development Index (HDI) classification. The HDI classification helps in categorizing regions into different levels of human development to understand how development levels influence the pandemic’s severity.
 
 ```sql
@@ -120,7 +120,7 @@ Screenshot of the SQL Output
 
 ![Image](https://github.com/user-attachments/assets/39c81602-43c8-45f0-b445-0aeb7681a9a8)
 
-#### 5.4. SQL Query: COVID-19 Cases Per Million and HDI Classification
+### 5.4. SQL Query: COVID-19 Cases Per Million and HDI Classification
 This query compares the total COVID-19 cases per million population for each location (continent and country) and integrates it with demographic factors such as Human Development Index (HDI) and Population Density. The analysis also classifies locations based on their HDI to understand the relationship between development levels and the spread of COVID-19.
 
 ```sql
@@ -147,7 +147,7 @@ Screenshot of the SQL Output
 
 ![Image](https://github.com/user-attachments/assets/8141ba93-434d-4bbf-8cf1-fdc0dac6f637)
 
-#### 5.5.Testing and Case Rates per Population by HDI Classification
+### 5.5.Testing and Case Rates per Population by HDI Classification
 This query calculates the testing rate and case rate per population based on Human Development Index (HDI) classification. It provides an overview of how testing and case rates varied across different levels of human development, offering insights into the global response to the pandemic relative to population size.
 
 ```sql
@@ -179,7 +179,7 @@ Screenshot of the SQL Output
 
 ![Image](https://github.com/user-attachments/assets/0958eb43-03d3-4bcd-9a87-b5e1c9134327)
 
-#### 5.6. Fatality Rate by Continent Over Time
+### 5.6. Fatality Rate by Continent Over Time
 This query calculates the fatality rate for each continent over time by comparing the total deaths to total cases. The result helps in understanding how the pandemic's impact, in terms of fatality, varied by continent at different points in time.
 ```sql
 SELECT 
@@ -197,7 +197,7 @@ Screenshot of the SQL Output
 
 ![Image](https://github.com/user-attachments/assets/600f2d41-4ae6-49d3-bdb5-8cdd5f83617b)
 
-#### 5.7. Average Fatality Rate and Percentage of Population Aged 65+ by HDI Classification
+### 5.7. Average Fatality Rate and Percentage of Population Aged 65+ by HDI Classification
 This query calculates the average fatality rate per 100k people and the average percentage of the population aged 65 and older for each Human Development Index (HDI) classification. It helps understand how the age distribution of populations and the severity of COVID-19 (in terms of fatality rate) vary across different levels of human development.
 ```sql
 select [Classification of HDI],AVG(aged_65_older)avg_percent_aged_65_plus,
@@ -224,7 +224,7 @@ Screenshot of the SQL Output
 
 ![Image](https://github.com/user-attachments/assets/0b525bce-2c30-4eac-aa66-7830df88c017)
 
-#### 5.8.  Comprehensive COVID-19 Data Analysis by Location
+### 5.8.  Comprehensive COVID-19 Data Analysis by Location
 This query combines various COVID-19-related metrics with demographic and developmental data, offering a comprehensive view of how different factors correlate with pandemic outcomes across locations.
 
 ```sql
