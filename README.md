@@ -205,3 +205,55 @@ group by [Classification of HDI]
 Screenshot of the SQL Output
 
 ![Image](https://github.com/user-attachments/assets/0b525bce-2c30-4eac-aa66-7830df88c017)
+
+#### 5.8.  Comprehensive COVID-19 Data Analysis by Location
+This query combines various COVID-19-related metrics with demographic and developmental data, offering a comprehensive view of how different factors correlate with pandemic outcomes across locations.
+
+```sql
+SELECT 
+    t1.continent,
+    t1.location,
+    population,
+    t1.fatality_rate,
+    fatality_per_100k,
+    t2.human_development_index,
+    t2.population_density,
+    "Classification of HDI",
+    life_expectancy,
+    aged_65_older,
+    (population * aged_65_older / 100) AS aged_65_population
+FROM
+    (
+        SELECT 
+            continent,
+            location,
+            ROUND((SUM(total_deaths) / SUM(total_cases)) * 100, 3) AS fatality_rate,
+            MAX(total_deaths) / MAX(population) * 100000 AS fatality_per_100k,
+            MAX(population) AS population
+        FROM 
+            coviddeaths
+        GROUP BY 
+            continent, location
+    ) t1
+LEFT JOIN
+    (
+        SELECT DISTINCT 
+            location,
+            population_density,
+            human_development_index,
+            CASE 
+                WHEN human_development_index > 0.800 THEN 'Very high'
+                WHEN human_development_index BETWEEN 0.700 AND 0.799 THEN 'High'
+                WHEN human_development_index BETWEEN 0.550 AND 0.699 THEN 'Medium'
+                WHEN human_development_index < 0.550 THEN 'Low'
+            END AS "Classification of HDI",
+            life_expectancy,
+            aged_65_older
+        FROM 
+            covidvaccinations
+    ) t2
+ON 
+    t1.location = t2.location;
+```
+
+![Image](https://github.com/user-attachments/assets/ba73e18c-c193-481d-92c8-e767a2890275)
