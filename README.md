@@ -10,10 +10,11 @@ The data was downloaded from [Our World in Data](https://ourworldindata.org/), a
 
 ### **2. Preprocessing in Excel**
 1. The dataset was cleaned and split into two files for analysis:
+
    - **coviddeaths.csv**: Focused on data related to cases, deaths, and population.
    - **covidvaccinations.csv**: Included data on vaccination progress, testing rates, and human development index (HDI).
 
-2. The split ensured better data organization and easier analysis in SQL.
+3. The split ensured better data organization and easier analysis in SQL.
 
 ---
 
@@ -30,15 +31,32 @@ The data was downloaded from [Our World in Data](https://ourworldindata.org/), a
 ### **4. Data Understanding**
 **Datasets Used:**
    - **coviddeaths**: Contains data on COVID-19 cases, deaths, and population by location and date.
-   - **covidvaccinations**: Contains data on vaccination progress, testing rates, and HDI by location and date.
+   - **Key Columns:** `location`, `date`, `total_cases`, `total_deaths`, `population`
+   
+```sql
+SELECT COLUMN_NAME
+FROM INFORMATION_SCHEMA.COLUMNS
+WHERE TABLE_NAME = 'coviddeaths'
+      AND TABLE_SCHEMA = 'dbo';
+```
+![Image](https://github.com/user-attachments/assets/553495de-235a-4278-9a13-8705b14a8c58)
 
-**Key Columns:**
-   - **coviddeaths**: `location`, `date`, `total_cases`, `total_deaths`, `population`
-   - **covidvaccinations**: `location`, `date`, `total_tests`, `human_development_index`, `aged_65_older`
+
+   - **covidvaccinations**: Contains data on vaccination progress, testing rates, and HDI by location and date.
+   - **Key Columns:** `location`, `date`, `total_tests`, `human_development_index`, `aged_65_older`
+```sql
+SELECT COLUMN_NAME
+FROM INFORMATION_SCHEMA.COLUMNS
+WHERE TABLE_NAME = 'covidvaccinations'
+      AND TABLE_SCHEMA = 'dbo';
+```
+![Image](https://github.com/user-attachments/assets/90e8d834-a860-43f6-995f-6f86c96110b3)
+
+
 
 ---
 
-### **5. Data Cleaning and Preprocessing**
+### **5. Data Analysis**
 #### Filtering Relevant Data
 Extracted essential columns such as `total_cases`, `total_deaths`, `population`, `total_tests`, and `human_development_index`.
 
