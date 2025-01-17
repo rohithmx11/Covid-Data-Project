@@ -61,10 +61,11 @@ Screenshot of the SQL Output
 #### SQL Query: Cumulative COVID-19 Cases by Continent Over Time
 ```sql
 SELECT
-	continent,
-	date,
-	SUM(new_cases)over(partition by continent order by date) as continents_cumulative_case
+    continent,
+    date,
+    SUM(new_cases) OVER (PARTITION BY continent ORDER BY date) AS continents_cumulative_case
 FROM
-	coviddeaths;
+    coviddeaths;
+
 ```
 Screenshot of the SQL Output
