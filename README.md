@@ -77,6 +77,7 @@ Screenshot of the SQL Output
 ![Image](https://github.com/user-attachments/assets/99fad622-5250-4556-8f25-ed390c6f5532)
 
 ### 5.2. SQL Query: Cumulative COVID-19 Cases by Continent Over Time
+To analyze the cumulative COVID-19 cases by continent over time, we used a window function to calculate the running total of new cases for each continent, ordered by date. This helps in visualizing the growth of cases over time for different regions.
 ```sql
 SELECT
     continent,
