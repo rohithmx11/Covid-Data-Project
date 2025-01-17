@@ -128,3 +128,80 @@ where t2.human_development_index is not null
 Screenshot of the SQL Output
 
 ![Image](https://github.com/user-attachments/assets/8141ba93-434d-4bbf-8cf1-fdc0dac6f637)
+
+#### 5.5.Testing and Case Rates per Population by HDI Classification
+This query calculates the testing rate and case rate per population based on Human Development Index (HDI) classification. It provides an overview of how testing and case rates varied across different levels of human development, offering insights into the global response to the pandemic relative to population size.
+
+```sql
+select [Classification of HDI],SUM(total_tests) * 1.0 / SUM(population) AS tests_per_population,
+    SUM(total_cases) * 1.0 / SUM(population) AS cases_per_population
+from(
+select t1.location,t1.total_tests,t1.human_development_index,t2.total_cases,t2.population,
+	case when human_development_index > 0.800 then 'Very high human development'
+		 when human_development_index between 0.700 and 0.799 then 'High human development'
+		 when human_development_index between 0.550 and 0.699 then 'Medium human development'
+		 when human_development_index < 0.550 then 'Low human development'
+		 end as 'Classification of HDI'
+from(
+select location,MAX(total_tests) total_tests, max(human_development_index)human_development_index
+from covidvaccinations
+where YEAR(date) < 2023
+group by location)t1
+join
+(
+select location, MAX(total_cases) total_cases ,max(population) as population
+from coviddeaths 
+where YEAR(date) < 2023
+group by location)t2
+on t1.location = t2.location)t3
+where [Classification of HDI] is not null
+group by [Classification of HDI]
+```
+Screenshot of the SQL Output
+
+![Image](https://github.com/user-attachments/assets/0958eb43-03d3-4bcd-9a87-b5e1c9134327)
+
+#### 5.6. Fatality Rate by Continent Over Time
+This query calculates the fatality rate for each continent over time by comparing the total deaths to total cases. The result helps in understanding how the pandemic's impact, in terms of fatality, varied by continent at different points in time.
+```sql
+SELECT 
+    continent,
+    date, 
+    SUM(total_deaths) / SUM(total_cases) * 100 AS continent_fatality_rate
+FROM 
+    coviddeaths
+GROUP BY 
+    continent, date;
+
+```
+
+Screenshot of the SQL Output
+
+![Image](https://github.com/user-attachments/assets/600f2d41-4ae6-49d3-bdb5-8cdd5f83617b)
+
+#### 5.7. Average Fatality Rate and Percentage of Population Aged 65+ by HDI Classification
+This query calculates the average fatality rate per 100k people and the average percentage of the population aged 65 and older for each Human Development Index (HDI) classification. It helps understand how the age distribution of populations and the severity of COVID-19 (in terms of fatality rate) vary across different levels of human development.
+```sql
+select [Classification of HDI],AVG(aged_65_older)avg_percent_aged_65_plus,
+	AVG(fatality_per_100k) avg_fatality_per_100k
+from(
+select distinct t1.location,human_development_index,aged_65_older,fatality_per_100k,
+	case when human_development_index > 0.800 then 'Very high human development'
+		 when human_development_index between 0.700 and 0.799 then 'High human development'
+		 when human_development_index between 0.550 and 0.699 then 'Medium human development'
+		 when human_development_index < 0.550 then 'Low human development'
+		 end as 'Classification of HDI'
+from covidvaccinations as t1
+join
+(
+select location,max(total_deaths)/max(population)*100000 as fatality_per_100k
+from coviddeaths
+group by location)t2
+on t1.location = t2.location)t3
+where t3.[Classification of HDI] is not null
+group by [Classification of HDI]
+```
+
+Screenshot of the SQL Output
+
+![Image](https://github.com/user-attachments/assets/0b525bce-2c30-4eac-aa66-7830df88c017)
