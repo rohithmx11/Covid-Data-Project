@@ -42,7 +42,7 @@ The data was downloaded from [Our World in Data](https://ourworldindata.org/), a
 #### Filtering Relevant Data
 Extracted essential columns such as `total_cases`, `total_deaths`, `population`, `total_tests`, and `human_development_index`.
 
-#### SQL Query: Extracting and Organizing Relevant Columns
+#### 5.1. SQL Query: Extracting and Organizing Relevant Columns
 ```sql
 SELECT 
 	[location],
@@ -58,7 +58,7 @@ Screenshot of the SQL Output
 
 ![Image](https://github.com/user-attachments/assets/99fad622-5250-4556-8f25-ed390c6f5532)
 
-#### SQL Query: Cumulative COVID-19 Cases by Continent Over Time
+#### 5.2. SQL Query: Cumulative COVID-19 Cases by Continent Over Time
 ```sql
 SELECT
     continent,
