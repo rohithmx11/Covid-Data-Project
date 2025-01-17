@@ -199,7 +199,8 @@ Screenshot of the SQL Output
 ![Image](https://github.com/user-attachments/assets/600f2d41-4ae6-49d3-bdb5-8cdd5f83617b)
 
 ### 5.7. Average Fatality Rate and Percentage of Population Aged 65+ by HDI Classification
-This query calculates the average fatality rate per 100k people and the average percentage of the population aged 65 and older for each Human Development Index (HDI) classification. It helps understand how the age distribution of populations and the severity of COVID-19 (in terms of fatality rate) vary across different levels of human development.
+This query calculates the average fatality rate per 100k people and the average percentage of the population aged 65 and older for each Human Development Index (HDI) classification. 
+It helps understand how the age distribution of populations and the severity of COVID-19 (in terms of fatality rate) vary across different levels of human development.
 ```sql
 select [Classification of HDI],AVG(aged_65_older)avg_percent_aged_65_plus,
 	AVG(fatality_per_100k) avg_fatality_per_100k
@@ -226,7 +227,8 @@ Screenshot of the SQL Output
 ![Image](https://github.com/user-attachments/assets/0b525bce-2c30-4eac-aa66-7830df88c017)
 
 ### 5.8.  Comprehensive COVID-19 Data Analysis by Location
-This query combines various COVID-19-related metrics with demographic and developmental data, offering a comprehensive view of how different factors correlate with pandemic outcomes across locations.
+This query combines various COVID-19-related metrics with demographic and developmental data, 
+offering a comprehensive view of how different factors correlate with pandemic outcomes across locations.
 
 ```sql
 SELECT 
@@ -276,3 +278,13 @@ ON
 ```
 
 ![Image](https://github.com/user-attachments/assets/ba73e18c-c193-481d-92c8-e767a2890275)
+
+
+### 6. Conclusion of Methodology
+This methodology section provided a comprehensive walkthrough of the SQL queries and analytical steps used to explore COVID-19 data. Each query was designed to extract meaningful insights into the pandemic's impact across regions, leveraging demographic, health, and socio-economic indicators.
+
+By integrating datasets from coviddeaths and covidvaccinations, we analyzed key metrics such as fatality rates, cumulative cases, human development classifications, and population demographics. These analyses aim to highlight disparities, trends, and correlations that could inform data-driven decision-making.
+
+In the next sections, we will delve into the results of these queries, interpret the findings, and discuss their implications in the broader context of public health and policy-making.
+
+
